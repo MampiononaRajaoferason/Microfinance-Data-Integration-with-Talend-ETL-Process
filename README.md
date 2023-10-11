@@ -3,31 +3,30 @@
 This document provides an overview of the ETL (Extract, Transform, Load) process used for microfinance data integration with Talend. The ETL pipeline covers the ingestion, validation, transformation, and storage of microfinance data.
 Table of Contents:
 
-# Project Documentation
+# Table of Contents:
 
-## Overview
-- **Introduction to the Project:** Welcome to the microfinance data integration project, designed to streamline financial data consolidation.
-- **Data Model Design:** A detailed look at the project's data model design.
-- **ETL Task Description:** An explanation of the ETL (Extract, Transform, Load) task's purpose and scope.
-- **Data Flow from Landing Zone to Archive Folder:** A step-by-step description of how data flows through the project.
+  ##  Overview
+   ###     Introduction to the Project
+   ###     Data Model Design
+   ###     ETL Task Description
+   ###     Data Flow from Landing Zone to Archive Folder
 
-## Program Flow
+  ##  Program Flow
+    ###    Flow Schema (To Be Designed)
 
+ ###   Architecture and Design
+    ###    Architecture Overview
+    ###    ETL Pipeline Design
+    ###    Data Validation and Cleaning
+    ###    Staging and Data Modeling
+    ###    Archive and Data Warehousing
+    ###    SCD2 for Customer Dimension
+    ###    Final Data Warehouse Zone
 
-## Architecture and Design
-- **Architecture Overview:** An overview of the project's architectural design.
-- **ETL Pipeline Design:** Insights into the ETL pipeline's design.
-- **Data Validation and Cleaning:** Details on data validation and cleaning processes.
-- **Staging and Data Modeling:** How data progresses through staging and into data modeling.
-- **Archive and Data Warehousing:** An explanation of data archiving and warehousing procedures.
-- **SCD2 for Customer Dimension:** Implementation of Slowly Changing Dimension 2 for customer data.
-- **Final Data Warehouse Zone:** A description of the final data warehouse zone.
+ ##   ETL Jobs
+    ###    (Leave Empty for Job Descriptions)
 
-## ETL Jobs
-- (Leave Empty for Job Descriptions)
-
-## Tools and Technology
-
+ ##   Tools and Technology
 
 _______________________________________________________________________________________________________________________________
 # Overview
