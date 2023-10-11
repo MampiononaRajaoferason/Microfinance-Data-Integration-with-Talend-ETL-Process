@@ -12,7 +12,7 @@ Table of Contents:
 - **Data Flow from Landing Zone to Archive Folder:** A step-by-step description of how data flows through the project.
 
 ## Program Flow
-- **Flow Schema:** (To Be Designed)
+
 
 ## Architecture and Design
 - **Architecture Overview:** An overview of the project's architectural design.
@@ -27,15 +27,7 @@ Table of Contents:
 - (Leave Empty for Job Descriptions)
 
 ## Tools and Technology
-- **Technology Stack Used:** PostgreSQL, Talend Open Studio.
-- **ETL Tools :** Talend Open Studio.
-- **Data Quality Monitoring**
-- **Metadata Management**
-- **Data Security**
-- **Automated Testing:** 
-- **Incremental Data Processing:**
-- **Monitoring and Logging:** 
-- **Backup and Recovery:** 
+
 
 _______________________________________________________________________________________________________________________________
 # Overview
@@ -48,8 +40,10 @@ Welcome to our microfinance data integration project, where we embark on a journ
 
 In this project, we've opted to use PostgreSQL as our data warehousing solution to demonstrate the ETL processes and data integration flows. While PostgreSQL is utilized here, it's essential to note that in real-world scenarios, the choice of data warehousing technology can vary significantly. Cloud-based data warehousing services like Google BigQuery or Amazon Web Services (AWS) Redshift may be more suitable for handling large-scale data and analytics needs. These cloud services offer scalable, high-performance data warehousing capabilities that can seamlessly integrate with ETL pipelines. This project serves as a foundation for showcasing ETL practices, with the understanding that data warehousing choices should align with the specific requirements and scale of the business or organization.
 
+# Program Flow
+- **Flow Schema:** (To Be Designed)
 
-# ETL Pipeline Architecture
+# ETL Pipeline Architecture and Design
 
 The ETL pipeline is structured into several stages, each serving a specific purpose in the data integration process.
 
@@ -104,6 +98,7 @@ The ETL pipeline is structured into several stages, each serving a specific purp
   - **Performance Optimization:** Ensure efficient data warehouse querying.
   - **Error Handling:** Implement error handling for data warehousing processes.
 
+
 ## Additional Considerations
 
 - **Data Quality Monitoring:** Set up data quality checks and monitoring.
@@ -114,6 +109,18 @@ The ETL pipeline is structured into several stages, each serving a specific purp
 - **Monitoring and Logging:** Set up monitoring and logging solutions.
 - **Backup and Recovery:** Develop a backup and recovery plan.
 
+# ETL Jobs
+
+# Tools and Technology
+- **Technology Stack Used:** PostgreSQL, Talend Open Studio.
+- **ETL Tools :** Talend Open Studio.
+- **Data Quality Monitoring**
+- **Metadata Management**
+- **Data Security**
+- **Automated Testing:** 
+- **Incremental Data Processing:**
+- **Monitoring and Logging:** 
+- **Backup and Recovery:**
 ## Contributing
 
 Contributions to this ETL process are welcome. Feel free to submit issues or pull requests to enhance the ETL pipeline.
