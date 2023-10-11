@@ -5,28 +5,16 @@ Table of Contents:
 
 # Table of Contents:
 
-  ##  Overview
-   ###     Introduction to the Project
-   ###     Data Model Design
-   ###     ETL Task Description
-   ###     Data Flow from Landing Zone to Archive Folder
+  - [Overview](#overview)
 
-  ##  Program Flow
-    ###    Flow Schema (To Be Designed)
 
- ###   Architecture and Design
-    ###    Architecture Overview
-    ###    ETL Pipeline Design
-    ###    Data Validation and Cleaning
-    ###    Staging and Data Modeling
-    ###    Archive and Data Warehousing
-    ###    SCD2 for Customer Dimension
-    ###    Final Data Warehouse Zone
-
- ##   ETL Jobs
-    ###    (Leave Empty for Job Descriptions)
-
- ##   Tools and Technology
+  - [Program Flow](#program-flow)
+    
+  - [Architecture Design and Data Model](#architecture-and-design-and-data-model)
+    
+  - [ETL Jobs](#etl-jobs)
+    
+  - [Tools and Technology](#tools-and-technology)
 
 _______________________________________________________________________________________________________________________________
 # Overview
@@ -42,13 +30,14 @@ In this project, we've opted to use PostgreSQL as our data warehousing solution 
 # Program Flow
 - **Flow Schema:** (To Be Designed)
 
-# ETL Pipeline Architecture and Design
+# Architecture and Design and Data Model
+The microfinance data integration project is designed to efficiently consolidate and process financial data from three distinct sources: "encours.csv," "debs.csv," and "remb.csv." These sources include information about outstanding loans, customer details, disbursements, and loan repayments. The project's architectural design revolves around an Extract, Transform, Load (ETL) process with a specific focus on Slowly Changing Dimension 2 (SCD2) handling.
 
 The ETL pipeline is structured into several stages, each serving a specific purpose in the data integration process.
 
 ### 1. Landing Zone
 
-- **Purpose:** The landing zone is the initial repository for raw source data files.
+The project initiates in the "Landing Zone," where the raw data files, "encours.csv," "debs.csv," and "remb.csv," are expected to be deposited. The landing zone serves as the entry point for data into the ETL process.
 - **Considerations:**
   - **Performance Optimization:** Optimize file ingestion and loading processes.
   - **Error Handling:** Implement error handling for file ingestion and log issues.
@@ -56,7 +45,11 @@ The ETL pipeline is structured into several stages, each serving a specific purp
 
 ### 2. Staging Area
 
-- **Purpose:** The staging area is where data is cleaned and validated.
+Upon arrival in the landing zone, the data files are processed in the "Staging Area." This stage involves several crucial operations:
+
+- **Data Validation:** In this phase, the data undergoes validation checks to ensure its integrity and adherence to predefined data quality standards.
+- **Data Cleaning:** Any data inconsistencies or errors are addressed and rectified during the cleaning phase.
+- **Truncate Tables:** In this stage, tables are truncated, ensuring that data processing occurs for specific time periods (e.g., daily) or within defined intervals. This selective approach prevents reprocessing of the entire dataset.
 - **Considerations:**
   - **Performance Optimization:** Optimize data validation and cleaning processes.
   - **Error Handling:** Implement error handling for data quality issues.
@@ -116,13 +109,7 @@ The ETL pipeline is structured into several stages, each serving a specific purp
 - **Data Quality Monitoring**
 - **Metadata Management**
 - **Data Security**
-- **Automated Testing:** 
-- **Incremental Data Processing:**
-- **Monitoring and Logging:** 
-- **Backup and Recovery:**
-## Contributing
-
-Contributions to this ETL process are welcome. Feel free to submit issues or pull requests to enhance the ETL pipeline.
-
-
-
+- **Automated Testing** 
+- **Incremental Data Processing**
+- **Monitoring and Logging** 
+- **Backup and Recovery**
