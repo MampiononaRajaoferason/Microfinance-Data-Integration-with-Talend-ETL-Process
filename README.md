@@ -57,36 +57,37 @@ Upon arrival in the landing zone, the data files are processed in the "Staging A
 
 ### 3. Data Modeling Staging
 
-- **Purpose:** Data is loaded into a format suitable for the business data model.
-- **Considerations:**
+Following the staging area, the data transitions to the "Data Modeling Staging" phase. Here, data truncation occurs once again, ensuring that only the necessary data for the business's operational needs is carried forward. The data is structured and prepared to fit into the data model.- **Considerations:**
   - **Performance Optimization:** Ensure efficient data transformation.
   - **Error Handling:** Implement error handling for data modeling activities.
 
 ### 4. Archive Folder
 
-- **Purpose:** Archive both daily source files and full tables.
+In the "Archive Stage," both the daily free files and the full tables derived from the data model are preserved. This dual storage approach provides historical context and retains the integrity of the data over time.
+
 - **Considerations:**
   - **Performance Optimization:** Consider data compression and storage optimization.
   - **Error Handling:** Implement error handling for archiving data.
 
 ### 5. Data Warehouse Staging
 
-- **Purpose:** Build fact and dimension tables for the data warehouse.
+The core of the data warehousing process begins in the "Data Warehouse Staging" phase. Here, fact dimensions and dimension calculations are created and applied. Truncation, similar to previous stages, ensures that only the relevant data is incorporated, reducing redundancy and optimizing storage and processing.
 - **Considerations:**
   - **Performance Optimization:** Optimize data transformation processes.
   - **Error Handling:** Implement error handling for data warehouse staging.
 
 ### 6. SCD2 for Customer Dimension
 
-- **Purpose:** Implement Slowly Changing Dimension 2 (SCD2) for historical customer data.
+A pivotal component of the project is the implementation of Slowly Changing Dimension 2 (SCD2) handling, primarily focused on the customer dimension. SCD2 captures historical changes in dimension data over time, preserving a comprehensive history of customer records.
 - **Considerations:**
   - **Performance Optimization:** Optimize SCD2 processing for customer dimension.
   - **Error Handling:** Implement error handling for SCD2 updates.
 
 ### 7. Final Data Warehouse Zone
 
-- **Purpose:** Consolidate data for querying and reporting in the data warehouse.
-- **Considerations:**
+The final outcome of the ETL process culminates in the "Final Data Warehouse Zone." Here, the results of dimension calculations and SCD2 handling are appended, enriching the data warehouse with a complete and historical set of financial information.
+
+This architectural design showcases the project's dedication to data integrity, efficiency, and historical preservation of crucial financial information, making it a robust solution for microfinance data integration.- **Considerations:**
   - **Performance Optimization:** Ensure efficient data warehouse querying.
   - **Error Handling:** Implement error handling for data warehousing processes.
 
