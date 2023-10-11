@@ -87,7 +87,8 @@ A pivotal component of the project is the implementation of Slowly Changing Dime
 
 The final outcome of the ETL process culminates in the "Final Data Warehouse Zone." Here, the results of dimension calculations and SCD2 handling are appended, enriching the data warehouse with a complete and historical set of financial information.
 
-This architectural design showcases the project's dedication to data integrity, efficiency, and historical preservation of crucial financial information, making it a robust solution for microfinance data integration.- **Considerations:**
+This architectural design showcases the project's dedication to data integrity, efficiency, and historical preservation of crucial financial information, making it a robust solution for microfinance data integration.
+- **Considerations:**
   - **Performance Optimization:** Ensure efficient data warehouse querying.
   - **Error Handling:** Implement error handling for data warehousing processes.
 
