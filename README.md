@@ -21,7 +21,7 @@ ________________________________________________________________________________
 
 ### Project Introduction
 
-Welcome to our microfinance data integration project, where we embark on a journey to seamlessly blend technology and finance to empower decision-makers with valuable insights. In this endeavor, we've meticulously designed a data model that serves as the cornerstone of our ETL (Extract, Transform, Load) task. Our ETL program eagerly awaits the arrival of files in the landing zone, signaling the commencement of a well-orchestrated process. From the initial data validation to the intricate dance of transformations, culminating in the secure storage of tables and files in the archive folder, our project promises to be a testament to efficient data management and the power of informed decision-making.
+Welcome to our microfinance data integration project, where we embark on a journey to seamlessly blend technology and finance, ultimately empowering decision-makers with valuable insights. In this endeavor, we've meticulously designed a data model that serves as the cornerstone of our ETL (Extract, Transform, Load) task. Our ETL program eagerly awaits the arrival of files in the landing zone, signaling the commencement of a well-orchestrated process. From the initial data validation to the intricate dance of transformations, culminating in the secure storage of tables and files in the archive folder, our project promises to be a testament to efficient data management and the power of informed decision-making. To visualize the fruits of our labor, we employ Power BI, a leading data visualization tool that adds a layer of depth and clarity to our insights.
 
 ### N.B. Project Data Warehousing
 
@@ -107,6 +107,8 @@ This architectural design showcases the project's dedication to data integrity, 
 
 # Tools and Technology
 - **Technology Stack Used:** PostgreSQL, Talend Open Studio, Java
+- **Data Visualization:** Power BI
+- **Cloud Services (Optional for Production):** Google BigQuery, Amazon Redshift
 - **Data Quality Monitoring**
 - **Metadata Management**
 - **Data Security**
