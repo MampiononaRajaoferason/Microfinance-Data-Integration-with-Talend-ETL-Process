@@ -104,8 +104,7 @@ Upon arrival in the landing zone, the data files are processed in the "Staging A
 # ETL Jobs
 
 # Tools and Technology
-- **Technology Stack Used:** PostgreSQL, Talend Open Studio.
-- **ETL Tools :** Talend Open Studio.
+- **Technology Stack Used:** PostgreSQL, Talend Open Studio, Java
 - **Data Quality Monitoring**
 - **Metadata Management**
 - **Data Security**
